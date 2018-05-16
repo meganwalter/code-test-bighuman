@@ -33,7 +33,7 @@ body {
     right: 0;
     top: 0;
     height: 100%;
-    background-image: url(./../../img/bag@2x.png);
+    background-image: url(./../img/bag@2x.png);
     background-repeat: no-repeat;
     background-size: 30rem auto;
     background-position: right bottom;
