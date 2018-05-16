@@ -1,0 +1,69 @@
+.hero {
+  position: relative;
+  padding: 2rem;
+  background-color: $primary-color-blue;
+  height: 45rem;
+  @include md {
+    height: 55rem;
+  }
+
+  &__bgimg {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-image: url(../../img/bag@2x.png);
+    background-repeat: no-repeat;
+    background-size: 30rem auto;
+    background-position: right bottom;
+    display: inline-block;
+    z-index: 0;
+    opacity: .4;
+    @include md {
+      background-size: 40rem auto;
+      background-position: 75% bottom;
+    }
+    @include lg {
+      opacity: 1;
+      background-position: 85% bottom;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    position: absolute;
+  }
+
+  &__logo-img {
+    width: 15rem;
+    display: inline-block;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 11rem;
+    z-index: 1;
+    display: inline-block;
+    @include sm {
+      width: 38rem;
+      margin-left: 4rem;
+    }
+    @include lg {
+      margin-left: 8rem;
+      margin-top: 13rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 3.2rem;
+  }
+
+  &__content-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.6rem;
+  }
+}

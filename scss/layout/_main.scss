@@ -1,0 +1,38 @@
+.main {
+  display: block;
+  padding: 2rem;
+  height: 40rem;
+  background-color: $color-grey-light;
+  &__heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    color: $color-blue-dark;
+    font-size: 2.8rem;
+  }
+  &__content {
+    margin: 0 auto;
+    text-align: center;
+    @include sm {
+      width: 60%;
+    }
+    @include lg {
+      width: 40%;
+    }
+  }
+  &__intro-text {
+    color: $color-grey-dark;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  &__list {
+    padding: 2rem;
+  }
+  &__item {
+    list-style: disc;
+    list-style-position: inside;
+    color: $color-grey-dark;
+    font-size: 2rem;
+  }
+}

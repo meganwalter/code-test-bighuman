@@ -1,0 +1,14 @@
+.btn {
+  color: $color-white;
+  text-transform: uppercase;
+  padding: 1.5rem 1.5rem;
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  z-index: 1;
+
+  &--green {
+    background-color: $color-green;
+  }
+}
