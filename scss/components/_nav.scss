@@ -8,7 +8,7 @@
     background-color: #0c5899;
     display: block;
     margin: 6rem -2rem;
-    padding: 9rem;
+    padding: 9rem 6rem;
   }
 
   @include md {
@@ -63,7 +63,7 @@
   &__item {
     list-style: none;
     font-size: 1.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     @include md{
       display: inline;
@@ -87,11 +87,11 @@
     border: 1px solid $color-white;
     width: 18rem;
     height: 4rem;
-    border-radius: 1px;
     font-size: 1.4rem;
     text-align: left;
     position: relative;
     border-radius: 2px;
+    margin: 0 auto;
 
     &-img {
       width: 3rem;
