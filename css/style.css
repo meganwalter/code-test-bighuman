@@ -48,6 +48,9 @@ body {
       .hero__bgimg {
         opacity: 1;
         background-position: 85% bottom; } }
+  .hero__top {
+    display: block;
+    height: 6rem; }
   .hero__logo {
     display: inline-block;
     position: absolute; }
@@ -62,11 +65,8 @@ body {
     @media (min-width: 576px) {
       .hero__content {
         width: 38rem;
-        margin-left: 4rem; } }
-    @media (min-width: 992px) {
-      .hero__content {
         margin-left: 8rem;
-        margin-top: 13rem; } }
+        margin-top: 10rem; } }
   .hero__title {
     margin-bottom: 2rem;
     font-weight: 400;
@@ -80,7 +80,7 @@ body {
 .main {
   display: block;
   padding: 2rem;
-  height: 40rem;
+  height: 70rem;
   background-color: #F7FAFA; }
   .main__heading {
     text-align: center;
@@ -100,7 +100,7 @@ body {
   .main__intro-text {
     color: #A9B1B8;
     font-size: 1.4rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 10rem; }
   .main__list {
     padding: 2rem; }
   .main__item {
@@ -118,7 +118,8 @@ body {
     background-color: #0c5899;
     display: block;
     margin: 6rem -2rem;
-    padding: 9rem 6rem; }
+    padding: 9rem 6rem;
+    z-index: 1000; }
   @media (min-width: 768px) {
     .nav {
       float: right;

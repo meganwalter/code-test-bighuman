@@ -29,6 +29,10 @@
       background-position: 85% bottom;
     }
   }
+  &__top {
+    display: block;
+    height: 6rem;
+  }
   &__logo {
     display: inline-block;
     position: absolute;
@@ -46,11 +50,8 @@
     display: inline-block;
     @include sm {
       width: 38rem;
-      margin-left: 4rem;
-    }
-    @include lg {
       margin-left: 8rem;
-      margin-top: 13rem;
+      margin-top: 10rem;
     }
   }
 

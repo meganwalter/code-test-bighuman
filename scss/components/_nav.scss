@@ -9,6 +9,7 @@
     display: block;
     margin: 6rem -2rem;
     padding: 9rem 6rem;
+    z-index: 1000;
   }
 
   @include md {

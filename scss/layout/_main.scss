@@ -1,7 +1,7 @@
 .main {
   display: block;
   padding: 2rem;
-  height: 40rem;
+  height: 70rem;
   background-color: $color-grey-light;
   &__heading {
     text-align: center;
@@ -24,7 +24,7 @@
   &__intro-text {
     color: $color-grey-dark;
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
   }
   &__list {
     padding: 2rem;
