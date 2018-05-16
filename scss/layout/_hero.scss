@@ -45,9 +45,10 @@
 
   &__content {
     position: relative;
-    margin-top: 11rem;
+    margin-top: 6.1rem;;
     z-index: 1;
     display: inline-block;
+    width: 95%;
     @include sm {
       width: 38rem;
       margin-left: 8rem;

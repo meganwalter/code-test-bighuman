@@ -10,6 +10,8 @@
     margin: 6rem -2rem;
     padding: 9rem 6rem;
     z-index: 1000;
+    position: absolute;
+    width: 100%;
   }
 
   @include md {
@@ -26,6 +28,10 @@
     height: 5rem;
     top: 1rem;
     right: 1rem;
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
   &__icon {
     position: absolute;
