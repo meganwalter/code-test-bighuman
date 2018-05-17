@@ -7,11 +7,20 @@
   &__visible {
     background-color: #0c5899;
     display: block;
-    margin: 6rem -2rem;
-    padding: 9rem 6rem;
+    height: 50rem;
+    margin: 0 -2rem;
+    padding: 11rem 6rem;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
+
+    @include md {
+      height: auto;
+      padding: 0;
+      width: auto;
+      position: relative;
+    }
   }
 
   @include md {
@@ -21,13 +30,14 @@
     margin-top: 1rem;
   }
   &__button {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     cursor: pointer;
     width: 5rem;
     height: 5rem;
-    top: 1rem;
-    right: 1rem;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 5000;
     &:active,
     &:focus {
       outline: none;
@@ -43,7 +53,8 @@
       height: 2px;
       background-color: $color-green;
       display: inline-block;
-      top: 2.5rem;
+      top: 2.4rem;
+      left: .8rem;
     }
     &::before,
     &::after {
@@ -86,6 +97,9 @@
       text-decoration: none;
       color: inherit;
     }
+    &:hover {
+      color: $color-green;
+    }
   }
   &__languages {
     font-family: inherit;
@@ -99,6 +113,10 @@
     position: relative;
     border-radius: 2px;
     margin: 0 auto;
+
+    &:hover {
+      background-color: $color-green;
+    }
 
     &-img {
       width: 3rem;
@@ -115,6 +133,7 @@
       top: 50%;
       left: 45%;
       transform: translate(-50%, -50%);
+
     }
     &-icon {
       width: 4rem;

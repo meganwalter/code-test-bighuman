@@ -118,11 +118,19 @@ body {
   .nav__visible {
     background-color: #0c5899;
     display: block;
-    margin: 6rem -2rem;
-    padding: 9rem 6rem;
+    height: 50rem;
+    margin: 0 -2rem;
+    padding: 11rem 6rem;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%; }
+    @media (min-width: 768px) {
+      .nav__visible {
+        height: auto;
+        padding: 0;
+        width: auto;
+        position: relative; } }
   @media (min-width: 768px) {
     .nav {
       float: right;
@@ -130,13 +138,14 @@ body {
       margin: 0;
       margin-top: 1rem; } }
   .nav__button {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     cursor: pointer;
     width: 5rem;
     height: 5rem;
-    top: 1rem;
-    right: 1rem; }
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 5000; }
     .nav__button:active, .nav__button:focus {
       outline: none; }
   .nav__icon {
@@ -146,7 +155,8 @@ body {
       height: 2px;
       background-color: #00BFA5;
       display: inline-block;
-      top: 2.5rem; }
+      top: 2.4rem;
+      left: .8rem; }
     .nav__icon::before, .nav__icon::after {
       content: "";
       position: absolute;
@@ -175,6 +185,8 @@ body {
   .nav__link:link, .nav__link:visited {
     text-decoration: none;
     color: inherit; }
+  .nav__link:hover {
+    color: #00BFA5; }
   .nav__languages {
     font-family: inherit;
     color: #ffffff;
@@ -187,6 +199,8 @@ body {
     position: relative;
     border-radius: 2px;
     margin: 0 auto; }
+    .nav__languages:hover {
+      background-color: #00BFA5; }
     .nav__languages-img {
       width: 3rem;
       display: inline-block;
