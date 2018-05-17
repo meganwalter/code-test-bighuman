@@ -46,6 +46,9 @@
     &:focus {
       outline: none;
     }
+    @include md {
+      display: none;
+    }
   }
   &__icon {
     position: absolute;

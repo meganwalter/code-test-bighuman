@@ -152,6 +152,9 @@ body {
     border: 1px solid #0c5899; }
     .nav__button:active, .nav__button:focus {
       outline: none; }
+    @media (min-width: 768px) {
+      .nav__button {
+        display: none; } }
   .nav__icon {
     position: absolute; }
     .nav__icon, .nav__icon::before, .nav__icon::after {
