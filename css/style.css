@@ -145,7 +145,11 @@ body {
     height: 5rem;
     top: 2.5rem;
     right: 2.5rem;
-    z-index: 5000; }
+    z-index: 5000;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #0c5899; }
     .nav__button:active, .nav__button:focus {
       outline: none; }
   .nav__icon {
@@ -153,14 +157,16 @@ body {
     .nav__icon, .nav__icon::before, .nav__icon::after {
       width: 3rem;
       height: 2px;
-      background-color: #00BFA5;
+      background-color: #0c5899;
       display: inline-block;
       top: 2.4rem;
-      left: .8rem; }
+      left: 50%;
+      transform: translateX(-50%); }
     .nav__icon::before, .nav__icon::after {
       content: "";
       position: absolute;
-      left: 0; }
+      left: 50%;
+      transform: translateX(-50%); }
     .nav__icon::before {
       top: -1rem; }
     .nav__icon::after {
